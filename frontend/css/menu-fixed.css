@@ -1,0 +1,141 @@
+/* parte de los botones fijados en la pantalla, whatsapp y carrito */
+.caja-fixed {
+    position: fixed;
+    width: 16%;
+    display: flex;
+    right: 0;
+    bottom: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.caja-fixed img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+.caja-fixed a {
+    display: block;
+    width: 40%;
+    transition: width 0.3s ease;
+}
+.caja-fixed a:hover {
+    width: 50%;
+}
+
+/* parte del menú tortuga */
+header {
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 12vh;
+}
+.img-contenedor-header {
+    height: 80%;
+    box-sizing: border-box;
+}
+.img-contenedor-header img {
+    height: 100%;
+    object-fit: cover;
+}
+#btnMenu {
+    display: none;
+}
+
+/* lista del menu */
+.lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 2%;
+    flex: 0 0 82%;
+}
+.item-menu{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.enlace-menu {
+    display: block;
+    width: 100%;
+    padding: 14% 8%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.enlace-menu:hover {
+    color: rgb(255, 86, 105);
+}
+
+footer img {
+    width: 20%;
+}
+
+/* parte responsive de nuestro menú */
+@media (max-width: 800px) {
+    #btnMenu {
+        display: block;
+        position: fixed;
+        right: 2%;
+        top: 2%;
+    }
+    header {
+        width: 40vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top:0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: left 0.3s ease;
+    }
+    .img-contenedor-header {
+        width:60%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .img-contenedor-header img {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
+    .lista-menu {
+        flex: 0 0 50%;
+        margin-top: 20%;
+        flex-direction: column;
+    }
+    .item-menu {
+        width: 80%;
+    }
+    .enlace-menu {
+        padding: 14% 0;
+    }
+
+    .menu-cerrado {
+        left: -40%;
+    }
+
+    /* responsive para los botones flotantes */
+    .caja-fixed {
+        width: 25%;
+    }
+}
+
+@media (max-width: 520px) {
+    .caja-fixed {
+        width: 32%;
+    }
+}

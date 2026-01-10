@@ -15,10 +15,11 @@
         <a href="frontend/carrito.html"><img src="frontend/imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
     </div>
 
-    <header>
-        <img src="frontend/imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+    <header id="header" class="menu-cerrado">
+        <div class="img-contenedor-header">
+            <img src="frontend/imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+        </div>
 
-        <button id="btnMenu">☰</button>
         <ul class="lista-menu">
             <li class="item-menu"><a href="#" class="enlace-menu">INICIO</a></li>
             <li class="item-menu"><a href="frontend/tienda.html" class="enlace-menu">TIENDA</a></li>
@@ -27,6 +28,12 @@
             <li class="item-menu"><a href="frontend/contacto.html" class="enlace-menu">CONTACTO</a></li>
         </ul>
     </header>
+    <button id="btnMenu">☰</button>
+
+    <section class="seccion-titulo">
+        <h1>Farmasi</h1>
+        <p class="descripcion-titulo">Linea de cosméticos y cuidado personal.</p>
+    </section>
 
     <section class="mas-vendido">
         <h2 class="subtitulo-seccion">Lo más vendido</h2>
@@ -101,5 +108,6 @@
         </div>
     </footer>
     
+    <script src="frontend/js/menu.js"></script>
 </body>
 </html>
