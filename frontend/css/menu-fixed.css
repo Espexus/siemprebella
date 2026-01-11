@@ -1,4 +1,8 @@
 /* parte de los botones fijados en la pantalla, whatsapp y carrito */
+* {
+    margin: 0;
+    padding: 0;
+}
 .caja-fixed {
     position: fixed;
     width: 16%;
@@ -78,8 +82,52 @@ header {
     color: rgb(255, 86, 105);
 }
 
+
+/* css para el footer */
+footer {
+    color: white;
+}
+.flex-horizontal {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    box-sizing: border-box;
+}
+footer .flex-horizontal {
+    background-color: rgb(18, 18, 18);
+    gap: 5%;
+    padding: 6% 2%;
+}
+.flex-vertical-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .flex-vertical-centrado {
+    flex: 0 0 25%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+} 
 footer img {
-    width: 20%;
+    width: 60%;
+    margin-bottom: 10%;
+}
+.titulo-contacto {
+    font-size: 2em;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.lista-contacto li {
+    margin-bottom: 2%;
+    margin-left: 8%;
+}
+.pie-copyright {
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box;
 }
 
 /* parte responsive de nuestro menú */
@@ -89,9 +137,11 @@ footer img {
         position: fixed;
         right: 2%;
         top: 2%;
+        font-size: 1.5em;
+        padding: 2%;
     }
     header {
-        width: 40vw;
+        width: 60vw;
         height: 100vh;
         position: fixed;
         left: 0;
@@ -103,7 +153,7 @@ footer img {
         transition: left 0.3s ease;
     }
     .img-contenedor-header {
-        width:60%;
+        width:50%;
         height: auto;
         box-sizing: border-box;
     }
@@ -114,23 +164,28 @@ footer img {
     }
     .lista-menu {
         flex: 0 0 50%;
-        margin-top: 20%;
+        margin-top: 10%;
         flex-direction: column;
+        align-items: center;
     }
     .item-menu {
-        width: 80%;
+        width: 60%;
     }
     .enlace-menu {
         padding: 14% 0;
     }
 
     .menu-cerrado {
-        left: -40%;
+        left: -60%;
     }
 
     /* responsive para los botones flotantes */
     .caja-fixed {
         width: 25%;
+    }
+
+    footer .flex-vertical-centrado {
+        flex: 0 0 40%;
     }
 }
 
@@ -138,4 +193,14 @@ footer img {
     .caja-fixed {
         width: 32%;
     }
+    .lista-menu {
+        margin-top: 20%;
+    }
+    footer .flex-vertical-centrado {
+        flex: 0 0 50%;
+    }
+    footer .flex-horizontal, .pie-copyright {
+        padding: 6% 2%;
+    }
+    
 }

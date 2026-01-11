@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiempreBella</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontend/css/index.css">
     <link rel="stylesheet" href="frontend/css/menu-fixed.css">
     <link rel="shortcut icon" href="frontend/imgs/siemprebella-logo.jpg" type="image/x-icon">
 </head>
@@ -21,7 +21,7 @@
         </div>
 
         <ul class="lista-menu">
-            <li class="item-menu"><a href="#" class="enlace-menu">INICIO</a></li>
+            <li class="item-menu"><a href="index.html" class="enlace-menu">INICIO</a></li>
             <li class="item-menu"><a href="frontend/tienda.html" class="enlace-menu">TIENDA</a></li>
             <li class="item-menu"><a href="frontend/nosotros.html" class="enlace-menu">NOSOTROS</a></li>
             <li class="item-menu"><a href="frontend/preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
@@ -32,33 +32,33 @@
 
     <section class="seccion-titulo">
         <h1>Farmasi</h1>
-        <p class="descripcion-titulo">Linea de cosméticos y cuidado personal.</p>
+        <p class="descripcion-titulo text-normal">Linea de cosméticos y cuidado personal.</p>
     </section>
 
-    <section class="mas-vendido">
+    <section class="seccion-oscura">
         <h2 class="subtitulo-seccion">Lo más vendido</h2>
         <div id="contenedor-mas-vendidos">
 
         </div>
     </section>
-    <section class="linea-reviving">
-        <div>
+    <section class="seccion-flex-horizontal">
+        <div class="flex-vertical-centrado div-reviving">
             <h3 class="texto-peque">Linea reviving</h3>
             <p class="texto-destacado">Recupera y fortalece tu cabello</p>
         </div>
-        <div>
+        <div class="img-reviving">
             <img src="frontend/imgs/reviving.jpg" alt="imagen de producto de la linea reviving" class="img-size-completo">
         </div>
-        <div class="flex-vertical-centrado">
+        <div class="flex-vertical-centrado div-reviving">
             <p class="subtitulo-parrafo violeta">
                 Recupera la salud y abundancia de tu cabello
             </p>
-            <p class="descripcion">
+            <p class="descripcion text-normal">
                 Productos diseñados para recuperar el cabello perdido en damas y caballeros, para volver a recuperar tu autoestima y seguridad
             </p>
 
             <button class="boton-coloreado">
-                conoce mas
+                conoce mas 
                 <span class="flecha-enlace">⇨</span>
             </button>
         </div>
@@ -68,7 +68,7 @@
         <h3 class="subtitulo-destacado">
             Cuidado natural
         </h3>
-        <p class="descripcion">
+        <p class="descripcion text-normal">
             El jabón más suave con tus manos de todo el mercado
         </p>
 
@@ -90,21 +90,21 @@
     </section>
 
     <footer>
-        <div class="flex-vertical-centrado">
-            <img src="frontend/imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
-            <p class="descripcion">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
-        </div>
-        <div class="contacto-footer">
-            <div class="footer-superior">
-                <h3>contacto</h3>
-                <ul class="lista-contactos">
-                    <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
-                    <li>Teléfono: +57 311 4545175</li>
-                </ul>
+        <div class="flex-horizontal">
+            <div class="flex-vertical-centrado">
+                <img src="frontend/imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
+                <p class="descripcion text-normal">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
             </div>
             <div>
-                Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
+                    <h3 class="titulo-contacto">Contacto</h3>
+                    <ul class="lista-contacto text-normal">
+                        <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
+                        <li>Teléfono: +57 311 4545175</li>
+                    </ul>
             </div>
+        </div>
+        <div class="pie-copyright text-normal">
+            Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
         </div>
     </footer>
     

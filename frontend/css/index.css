@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.text-normal {
+    text-transform: none;
+}
+div {
+    padding: 6% 0;
+}
+.violeta {
+    color: rgb(255, 86, 105);
+}
+
+.seccion-titulo {
+    background-image: url("../imgs/fondo-titulo.png");
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 5em;
+    color: rgb(255, 86, 105);
+}
+.descripcion-titulo {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* estilos de la linea reviving */
+section {
+    padding: 3% 1%;
+    box-sizing: border-box;
+}
+.seccion-oscura {
+    background-color: rgb(232, 232, 232);
+}
+.flex-vertical-centrado {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.texto-peque {
+    width: 100%;
+    color: rgb(255, 86, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: 1em;
+}
+.texto-destacado {
+    width: 100%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 2.8em;
+}
+.img-size-completo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.subtitulo-parrafo {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3.2%;
+}
+.descripcion {
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+/* boton 1 especial */
+.boton-coloreado {
+    padding: 3%;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    margin: 4% auto;
+    transition:  color 0.6s ease;
+    transition:  background-color 0.6s ease;
+}
+.boton-coloreado span {
+    color: rgb(255, 86, 105);
+    font-size: 1.5em;
+}
+.boton-coloreado:hover {
+    background-color: rgb(255, 86, 105);
+    color: white;
+}
+.boton-coloreado:hover span {
+    color: white;
+}
+
+
+@media (min-width: 620px) {
+    .seccion-flex-horizontal {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        gap: 1%;
+        justify-content: space-around;
+    }
+    .seccion-flex-horizontal .div-reviving {
+        flex: 0 0 40%;
+    }
+    .img-reviving {
+        flex: 0 0 20%;
+    }
+    .img-size-completo {
+        width: 100%;
+    }
+}
