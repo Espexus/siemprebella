@@ -11,6 +11,7 @@ html {
 }
 div {
     padding: 6% 0;
+    box-sizing: border-box;
 }
 .violeta {
     color: rgb(255, 86, 105);
@@ -35,20 +36,30 @@ h1 {
 }
 
 /* estilos de la linea reviving */
-section {
-    padding: 3% 1%;
-    box-sizing: border-box;
-}
-.seccion-oscura {
-    background-color: rgb(232, 232, 232);
-}
 .flex-vertical-centrado {
     display: flex;
     flex-direction: column;
-    width: 80%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+
+}
+div[class="flex-vertical-centrado"] {
+    width: 80%;
+    box-sizing: border-box;
+}
+.margen-izquierdo {
+    margin-left: 4%;
+}
+section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6% 1%;
+    margin: 0;
+}
+.seccion-oscura {
+    background-color: rgb(232, 232, 232);
 }
 .texto-peque {
     width: 100%;
@@ -76,6 +87,7 @@ section {
     margin-bottom: 3.2%;
 }
 .descripcion {
+    width: 90%;
     font-size: 1.2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
@@ -104,6 +116,74 @@ section {
     color: white;
 }
 
+.subtitulo-destacado {
+    font-size: 2.1em;
+}
+.enlace-redondo {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    margin-top: 12%;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+}
+.enlace-redondo:hover {
+    background-color: rgb(255, 86, 105);
+    box-shadow: 0 0 20px rgb(255, 86, 105);
+}
+
+.white {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.seccion-calendula {
+    background-image: url("../imgs/calendula-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 12% 0;
+}
+
+.boton-oculto-img {
+    background-size: cover;
+    margin: 4% auto;
+    -webkit-margin-collapse: collapse;
+    width: 70%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-oculto-img a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 4%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px rgb(49, 49, 49);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.boton-oculto-img:hover a {
+    opacity: 100%;
+}
+
+/* mis fondo de las imagenes */
+.oculto1 {
+    background-image: url("../imgs/img-red1.png");
+}
+.oculto2 {
+    background-image: url("../imgs/img-red2.png");
+}
+.oculto3 {
+    background-image: url("../imgs/img-red3.png");
+}
 
 @media (min-width: 620px) {
     .seccion-flex-horizontal {
