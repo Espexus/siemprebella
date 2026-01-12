@@ -1,22 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.text-normal {
-    text-transform: none;
-}
-div {
-    padding: 6% 0;
-    box-sizing: border-box;
-}
-.violeta {
-    color: rgb(255, 86, 105);
-}
-
+ /* titulo personalizado */
 .seccion-titulo {
     background-image: url("../imgs/fondo-titulo.png");
     background-position: center;
@@ -37,65 +19,7 @@ h1 {
     color: white;
 }
 
-/* estilos de la linea reviving */
-.flex-vertical-centrado {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-
-}
-div[class="flex-vertical-centrado"] {
-    width: 80%;
-    box-sizing: border-box;
-}
-.margen-izquierdo {
-    margin-left: 4%;
-}
-section {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 6% 1%;
-    margin: 0;
-}
-.seccion-oscura {
-    background-color: rgb(232, 232, 232);
-}
-.texto-peque {
-    width: 100%;
-    color: rgb(255, 86, 105);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
-    font-size: 1em;
-}
-.texto-destacado {
-    width: 100%;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 2.8em;
-}
-.img-size-completo {
-    display: block;
-    width: 70%;
-    margin: 0 auto;
-}
-.subtitulo-parrafo {
-    font-size: 1.6em;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 3.2%;
-}
-.descripcion {
-    width: 90%;
-    font-size: 1.2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 300;
-    text-align: center;
-}
-/* boton 1 especial */
+/* boton coloreado */
 .boton-coloreado {
     padding: 3%;
     background-color: white;
@@ -118,9 +42,7 @@ section {
     color: white;
 }
 
-.subtitulo-destacado {
-    font-size: 2.1em;
-}
+/* enlace redondo */
 .enlace-redondo {
     width: 80px;
     height: 80px;
@@ -135,10 +57,7 @@ section {
     box-shadow: 0 0 20px rgb(255, 86, 105);
 }
 
-.white {
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
+/* fondo personalizado sección calendula */
 .seccion-calendula {
     background-image: url("../imgs/calendula-fondo.jpg");
     background-repeat: no-repeat;
@@ -148,6 +67,7 @@ section {
     padding: 12% 0;
 }
 
+/* parte de los botones */
 .boton-oculto-img {
     background-size: cover;
     margin: 4% auto;
@@ -185,23 +105,4 @@ section {
 }
 .oculto3 {
     background-image: url("../imgs/img-red3.png");
-}
-
-@media (min-width: 620px) {
-    .seccion-flex-horizontal {
-        width: 100%;
-        box-sizing: border-box;
-        display: flex;
-        gap: 1%;
-        justify-content: space-around;
-    }
-    .seccion-flex-horizontal .div-reviving {
-        flex: 0 0 40%;
-    }
-    .img-reviving {
-        flex: 0 0 20%;
-    }
-    .img-size-completo {
-        width: 100%;
-    }
 }

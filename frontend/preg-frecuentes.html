@@ -5,70 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas frecuentes</title>
 
-    <link rel="stylesheet" href="frontend/css/menu-fixed.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu-fixed.css">
+    <link rel="stylesheet" href="css/preguntas.css">
     <link rel="shortcut icon" href="imgs/siemprebella-logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="caja-fixed">
-        <a href="https://wa.me/573114545175"><img src="frontend/imgs/logo-wpp.png" alt="logo de whatsapp" title="Escribir a Whatsapp"></a>
-        <a href="frontend/carrito.html"><img src="frontend/imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
+        <a href="https://wa.me/573114545175"><img src="imgs/logo-wpp.png" alt="logo de whatsapp" title="Escribir a Whatsapp"></a>
+        <a href="carrito.html"><img src="imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
     </div>
 
-    <header>
-        <img src="frontend/imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+    <header id="header" class="menu-cerrado">
+        <div class="img-contenedor-header">
+            <img src="imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+        </div>
 
-        <button id="btnMenu">☰</button>
         <ul class="lista-menu">
             <li class="item-menu"><a href="index.html" class="enlace-menu">INICIO</a></li>
-            <li class="item-menu"><a href="frontend/tienda.html" class="enlace-menu">TIENDA</a></li>
-            <li class="item-menu"><a href="frontend/nosotros.html" class="enlace-menu">NOSOTROS</a></li>
-            <li class="item-menu"><a href="frontend/preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
-            <li class="item-menu"><a href="frontend/contacto.html" class="enlace-menu">CONTACTO</a></li>
+            <li class="item-menu"><a href="tienda.html" class="enlace-menu">TIENDA</a></li>
+            <li class="item-menu"><a href="nosotros.html" class="enlace-menu">NOSOTROS</a></li>
+            <li class="item-menu"><a href="preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
+            <li class="item-menu"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
         </ul>
     </header>
+    <button id="btnMenu">☰</button>
+
+    
+    <h1 class="titulo-seccion violeta">Preguntas frecuentes</h1>
     <section>
-        <h1 class="titulo-seccion">Preguntas frecuentes</h1>
 
         <details>
             <summary>¿Dónde están ubicados?</summary>
-            <p>Estamos ubicados en Arboledas, Norte de Santander, pero la distancia no es un problema ya que contamos con envíos a todo el país</p>
+            <p class="text-normal">Estamos ubicados en Arboledas, Norte de Santander, pero la distancia no es un problema ya que contamos con envíos a todo el país</p>
         </details>
 
         <details>
             <summary>¿Cómo realizo el pago?</summary>
-            <p>Si vas a pagar de forma digital vas a pagar los productos desde la página oficial de farmasi usando nuestro código de vendedor, así tendrás un entorno de pago seguro e intuitivo para tu cuenta bancaria, cuenta Nequi o PSE.</p>
+            <p class="text-normal">Si vas a pagar de forma digital vas a pagar los productos desde la página oficial de farmasi usando nuestro código de vendedor, así tendrás un entorno de pago seguro e intuitivo para tu cuenta bancaria, cuenta Nequi o PSE.</p>
         </details>
 
         <details>
             <summary>¿Dónde puedo conocer sus productos?</summary>
-            <p>Si nos contactas a través de nuestro Whatsapp te podemos dar enlace al catalogo completo de productos de Farmasi, en cambio si buscas información de un producto en específico podemos asesorarte de forma personalizada sin ningún compromiso.</p>
+            <p class="text-normal">Si nos contactas a través de nuestro Whatsapp te podemos dar enlace al catalogo completo de productos de Farmasi, en cambio si buscas información de un producto en específico podemos asesorarte de forma personalizada sin ningún compromiso.</p>
         </details>
 
         <details>
             <summary>¿Cuál es el tiempo de entrega?</summary>
-            <p>Si compras nuestros productos de forma remota la entrega la realizará la empresa de Farmasi directamente a través de los distintos servicios de envío que hay en el país. El plazo de entrega suele variar entre 3-7 días desde realizado el pago.</p>
+            <p class="text-normal">Si compras nuestros productos de forma remota la entrega la realizará la empresa de Farmasi directamente a través de los distintos servicios de envío que hay en el país. El plazo de entrega suele variar entre 3-7 días desde realizado el pago.</p>
         </details>
 
 
     </section>
 
+    <script src="js/menu.js"></script>
+
     <footer>
-        <div class="flex-vertical-centrado">
-            <img src="frontend/imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
-            <p class="descripcion">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
-        </div>
-        <div class="contacto-footer">
-            <div class="footer-superior">
-                <h3>contacto</h3>
-                <ul class="lista-contactos">
-                    <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
-                    <li>Teléfono: +57 311 4545175</li>
-                </ul>
+        <div class="flex-horizontal">
+            <div class="flex-vertical-centrado">
+                <img src="imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
+                <p class="descripcion text-normal">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
             </div>
             <div>
-                Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
+                    <h3 class="titulo-contacto">Contacto</h3>
+                    <ul class="lista-contacto text-normal">
+                        <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
+                        <li>Teléfono: +57 311 4545175</li>
+                    </ul>
             </div>
+        </div>
+        <div class="pie-copyright text-normal">
+            Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
         </div>
     </footer>
     
