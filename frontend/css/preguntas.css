@@ -11,7 +11,7 @@ summary {
     font-size: 1.2em;
     font-weight: 400;
 }
-details[open] summary {
+details[open] summary, details:hover summary {
     color: rgb(255, 86, 105);
     font-weight: 800;
 }

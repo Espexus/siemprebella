@@ -21,6 +21,7 @@ section {
 div {
     padding: 6% 0;
     box-sizing: border-box;
+    width: 100%;
 }
 div[class="flex-vertical-centrado"] {
     width: 80%;
