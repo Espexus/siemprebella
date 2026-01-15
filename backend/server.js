@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const db = require("./bd.js");
+// a ver si se puede
 
 const app = express();
 app.use(cors());
