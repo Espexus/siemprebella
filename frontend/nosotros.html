@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="frontend/css/menu-fixed.css">
-    <link rel="shortcut icon" href="frontend/imgs/siemprebella-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/menu-fixed.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="shortcut icon" href="imgs/siemprebella-logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="caja-fixed">
-        <a href="https://wa.me/573114545175"><img src="frontend/imgs/logo-wpp.png" alt="logo de whatsapp" title="Escribir a Whatsapp"></a>
-        <a href="frontend/carrito.html"><img src="frontend/imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
+        <a href="https://wa.me/573114545175"><img src="imgs/logo-wpp.png" alt="logo de whatsapp" title="Escribir a Whatsapp"></a>
+        <a href="carrito.html"><img src="imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
     </div>
 
-    <header>
-        <img src="frontend/imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+    <header id="header" class="menu-cerrado">
+        <div class="img-contenedor-header">
+            <img src="imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+        </div>
 
-        <button id="btnMenu">☰</button>
         <ul class="lista-menu">
-            <li class="item-menu"><a href="index.html" class="enlace-menu">INICIO</a></li>
-            <li class="item-menu"><a href="frontend/tienda.html" class="enlace-menu">TIENDA</a></li>
-            <li class="item-menu"><a href="frontend/nosotros.html" class="enlace-menu">NOSOTROS</a></li>
-            <li class="item-menu"><a href="frontend/preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
-            <li class="item-menu"><a href="frontend/contacto.html" class="enlace-menu">CONTACTO</a></li>
+            <li class="item-menu"><a href="../index.html" class="enlace-menu">INICIO</a></li>
+            <li class="item-menu"><a href="tienda.html" class="enlace-menu">TIENDA</a></li>
+            <li class="item-menu"><a href="nosotros.html" class="enlace-menu">NOSOTROS</a></li>
+            <li class="item-menu"><a href="preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
+            <li class="item-menu"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
         </ul>
     </header>
+    <button id="btnMenu">☰</button>
 
     <section class="seccion-flex-horizontal">
         <div class="flex-vertical">
@@ -35,11 +38,10 @@
                 <p class="texto-destacado">Lideres en cosmeticos y en cuidado personal, comprometidos con la belleza, salud y bienestar de nuestras clientas</p>
             </div>
             <div>
-                <p class="descripcion">
+                <p class="descripcion text-normal">
                     Farmasi es una empresa internacional de belleza, cuidado personal, bienestar y productos para el hogar, con más de siete décadas de trayectoria en la industria. Comenzó como un laboratorio farmacéutico en Turquía y, con el tiempo, evolucionó hasta convertirse en un fabricante y vendedor global de cosméticos de calidad accesible, ofreciendo maquillaje, cuidado de la piel, nutrición y fragancias en más de 40 países.
                 </p>
             </div>
-
         </div>
         <div>
             <img src="imgs/img-informacion.png" class="img-size-completo" alt="imagen del aniversario 75 de farmasi">
@@ -51,15 +53,19 @@
             <img src="imgs/img-mision.png" alt="chica con catalogo de farmasi" class="img-size-completo">
         </div>
         <div class="flex-vertical">
-            <h4 class="subtitulo-parrafo">MISION</h4>
-            <p class="descripcion">
-                La misión de Farmasi es ofrecer productos de belleza, cuidado personal y bienestar innovadores, seguros y de alta calidad, accesibles para todos, que ayuden a las personas a verse y sentirse bien, promoviendo la autoestima, la honestidad y el empoderamiento personal a través de su modelo de venta directa.
-            </p>
+            <div class="parrafos-vertical">
+                <h4 class="subtitulo-parrafo">MISION</h4>
+                <p class="descripcion text-normal">
+                    La misión de Farmasi es ofrecer productos de belleza, cuidado personal y bienestar innovadores, seguros y de alta calidad, accesibles para todos, que ayuden a las personas a verse y sentirse bien, promoviendo la autoestima, la honestidad y el empoderamiento personal a través de su modelo de venta directa.
+                </p>
+            </div>
 
-            <h4 class="subtitulo-parrafo">VISION</h4>
-            <p class="descripcion">
-                La visión de Farmasi es convertirse en la empresa líder mundial en venta directa de cosméticos, reconocida por la excelencia de sus productos, su compromiso con la innovación, la sostenibilidad y por brindar oportunidades reales de crecimiento personal y profesional a su comunidad global.
-            </p>
+            <div class="parrafos-vertical">
+                <h4 class="subtitulo-parrafo">VISION</h4>
+                <p class="descripcion text-normal">
+                    La visión de Farmasi es convertirse en la empresa líder mundial en venta directa de cosméticos, reconocida por la excelencia de sus productos, su compromiso con la innovación, la sostenibilidad y por brindar oportunidades reales de crecimiento personal y profesional a su comunidad global.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -70,9 +76,21 @@
                 <p class="texto-destacado">valores</p>
             </div>
             <div>
-                <p class="descripcion">
-    
-                </p>
+                <ul class="descripcion text-normal">
+                    <li>Belleza accesible para todos:
+                    Creemos que verse y sentirse bien no debe ser un lujo, sino algo al alcance de cualquier persona. <br><br></li>
+                    <li>Calidad con propósito:
+                    Productos efectivos, seguros y hechos pensando en el bienestar real de quienes los usan. <br><br></li>
+                    <li>Empoderamiento de la mujer:
+                    Impulsar la confianza, la independencia y el crecimiento personal y económico de las mujeres. <br><br></li>
+                    <li>Innovación constante:
+                    Estar siempre mejorando fórmulas, tendencias y experiencias para ofrecer lo mejor. <br><br></li>
+                    <li>Sostenibilidad y cuidado del planeta:
+                    Producir belleza respetando el medio ambiente y reduciendo el impacto ecológico. <br><br></li>
+                    <li>Comunidad y apoyo mutuo:
+                    Crear redes de personas que se ayudan, crecen juntas y celebran sus logros.</li>
+                    
+                </ul>
             </div>
         </div>
         <div>
@@ -80,8 +98,8 @@
         </div>
     </section>
 
-    <section class="seccion-flex-horizontal">
-        <div class="flex-vertical">
+    <section class="seccion-flex-horizontal seccion-valores">
+        <div class="flex-vertical seccion-icono">
             <img src="imgs/perseverancia-icono.png" alt="icono sobre perseverancia" class="icono">
             <p class="subtitulo-icono">Perseverancia</p>
             <p class="descripcion gris">
@@ -89,13 +107,13 @@
             </p>
         </div>
 
-        <div class="flex-vertical">
+        <div class="flex-vertical seccion-icono">
             <img src="imgs/amor-icono.png" alt="icono sobre amor" class="icono">
             <p class="subtitulo-icono">Amor</p>
             <p class="descripcion gris">Todo lo que hacemos en farmasi lo hacemos con amor por y para nuestros clientes</p>
         </div>
 
-        <div class="flex-vertical">
+        <div class="flex-vertical seccion-icono">
             <img src="imgs/creatividad-icono.png" alt="icono sobre creatividad" class="icono">
             <p class="subtitulo-icono">Creatividad</p>
             <p class="descripcion gris">Surgen ideas en nuestra mente que llevamos a la realidad por medio de dedicación y esfuerzo.</p>
@@ -104,22 +122,24 @@
     
 
     <footer>
-        <div class="flex-vertical-centrado">
-            <img src="frontend/imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
-            <p class="descripcion">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
-        </div>
-        <div class="contacto-footer">
-            <div class="footer-superior">
-                <h3>contacto</h3>
-                <ul class="lista-contactos">
-                    <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
-                    <li>Teléfono: +57 311 4545175</li>
-                </ul>
+        <div class="flex-horizontal">
+            <div class="flex-vertical-centrado">
+                <img src="imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
+                <p class="descripcion text-normal">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
             </div>
             <div>
-                Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
+                    <h3 class="titulo-contacto">Contacto</h3>
+                    <ul class="lista-contacto text-normal">
+                        <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
+                        <li>Teléfono: +57 311 4545175</li>
+                    </ul>
             </div>
         </div>
+        <div class="pie-copyright text-normal">
+            Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
+        </div>
     </footer>
+    
+    <script src="js/menu.js"></script>
 </body>
 </html>

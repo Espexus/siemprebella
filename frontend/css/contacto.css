@@ -1,0 +1,80 @@
+/* estilo general */
+div {
+    -webkit-margin-collapse: collapse;
+    padding: 2% 0;
+}
+
+/* seccion de los datos */
+.datos {
+    padding-left: 4%;
+}
+.texto-destacado {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+.info-contacto {
+    width:70%;
+    padding: 4%;
+    box-sizing: border-box;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    border-collapse: collapse;
+}
+
+/* para el formulario */
+.formulario {
+    width: 90%;
+    margin: 0 auto;
+}
+.parte-form {
+    width: 100%;
+}
+input {
+    font-size: 1.15em;
+    width: 90%;
+    padding: 3% 1%;
+    padding-left: 4%;
+    margin: 2% 0;
+    -webkit-margin-collapse: collapse;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+    width: 90%;
+    padding: 3% 1%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    font-size: 1.15em;
+    text-transform: none;
+    min-height: 200px;
+}
+input, textarea {
+    color: rgb(116, 116, 116);
+}
+.boton {
+    color: white;
+    background-color: rgba(255, 86, 105);
+    padding: 4% 4%;
+    border: none;
+    box-sizing: border-box;
+    width: 30%;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.boton:hover, .boton:active {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* parte de mi mapa */
+.mapa-espacio {
+    width: 96%;
+    margin: 0 auto;
+    height: 40vh;
+}
+.mapa {
+    border: none;
+    width: 100%;
+    height: 100%;
+}

@@ -5,71 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="frontend/css/menu-fixed.css">
-    <link rel="shortcut icon" href="frontend/imgs/siemprebella-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu-fixed.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="shortcut icon" href="imgs/siemprebella-logo.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="caja-fixed">
-        <a href="https://wa.me/573114545175"><img src="frontend/imgs/logo-wpp.png" alt="logo de whatsapp" title="Escribir a Whatsapp"></a>
-        <a href="frontend/carrito.html"><img src="frontend/imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
+        <a href="https://wa.me/573114545175"><img src="imgs/logo-wpp.png" alt="logo de whatsapp" title="Escribir a Whatsapp"></a>
+        <a href="carrito.html"><img src="imgs/carrito.jpg" alt="icono de carro de compras" title="Ir al carrito"></a>
     </div>
 
-    <header>
-        <img src="frontend/imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+    <header id="header" class="menu-cerrado">
+        <div class="img-contenedor-header">
+            <img src="imgs/siemprebella-logo.jpg" alt="logotipo SiempreBella">
+        </div>
 
-        <button id="btnMenu">☰</button>
         <ul class="lista-menu">
-            <li class="item-menu"><a href="index.html" class="enlace-menu">INICIO</a></li>
-            <li class="item-menu"><a href="frontend/tienda.html" class="enlace-menu">TIENDA</a></li>
-            <li class="item-menu"><a href="frontend/nosotros.html" class="enlace-menu">NOSOTROS</a></li>
-            <li class="item-menu"><a href="frontend/preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
-            <li class="item-menu"><a href="frontend/contacto.html" class="enlace-menu">CONTACTO</a></li>
+            <li class="item-menu"><a href="../index.html" class="enlace-menu">INICIO</a></li>
+            <li class="item-menu"><a href="tienda.html" class="enlace-menu">TIENDA</a></li>
+            <li class="item-menu"><a href="nosotros.html" class="enlace-menu">NOSOTROS</a></li>
+            <li class="item-menu"><a href="preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
+            <li class="item-menu"><a href="contacto.html" class="enlace-menu">CONTACTO</a></li>
         </ul>
     </header>
+    <button id="btnMenu">☰</button>
+
 
     <section class="seccion-flex-horizontal">
+        
         <div class="filtros">
-            <h3 class="subtitulo-parrafo">Filtros por categoría</h3>
-            <form method="">
-                <input type="radio" name="categoria" value="calendula" id="calendula">
-                <label for="calendula">Linea de caléndula</label>
+            <div class="encabezado-filtros">
+                <h3 class="subtitulo-parrafo subtitulo-categoria">Filtros por categoría</h3>
+                <button id="btnFiltros" class="btn">☰</button>
+            </div>
+            <form class="form-filtros oculto" id="formulario-filtros">
+                <div class="form-part">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="calendula" id="calendula">
+                    <span class="cuadro"></span>
+                    <label for="calendula">Linea de caléndula</label>
+                </div>
 
-                <input type="radio" name="categoria" value="reviving" id="reviving">
-                <label for="reviving">Linea de reviving</label>
+                <div class="form-part">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="reviving" id="reviving">
+                    <span class="cuadro"></span>
+                    <label for="reviving">Linea de reviving</label>
+                </div>
+                
 
-                <input type="radio" name="categoria" value="skincare" id="skincare">
-                <label for="skincare">Linea de skincare</label>
+                <div class="form-part">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="skincare" id="skincare">
+                    <span class="cuadro"></span>
+                    <label for="skincare">Linea de skincare</label>
+                </div>
+                
 
-                <input type="radio" name="categoria" value="maquillaje" id="maquillaje">
-                <label for="maquillaje">Linea de maquillaje</label>
+                <div class="form-part">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="maquillaje" id="maquillaje">
+                    <span class="cuadro"></span>
+                    <label for="maquillaje">Linea de maquillaje</label>
+                </div>
 
-                <input type="radio" name="categoria" value="nutricion" id="nutricion">
-                <label for="nutricion">Linea de nutricion</label>
+                <div class="form-part">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="nutricion" id="nutricion">
+                    <span class="cuadro"></span>
+                    <label for="nutricion">Linea de nutricion</label>
+                </div>
             </form>
-        </div>
-        <div class="productos">
 
+        </div>
+        <div class="productos" id="lista-productos">
+            <h3 class="mensaje" id="mensaje">No hay productos que coincidan con los filtros seleccionados</h3>
         </div>
     </section>
 
     <footer>
-        <div class="flex-vertical-centrado">
-            <img src="frontend/imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
-            <p class="descripcion">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
-        </div>
-        <div class="contacto-footer">
-            <div class="footer-superior">
-                <h3>contacto</h3>
-                <ul class="lista-contactos">
-                    <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
-                    <li>Teléfono: +57 311 4545175</li>
-                </ul>
+        <div class="flex-horizontal">
+            <div class="flex-vertical-centrado">
+                <img src="imgs/siemprebella-logo.jpg" title="SiempreBella" alt="logo de siemprebella">
+                <p class="descripcion text-normal">Cuidado personal, cosmeticos y productos de belleza al mejor precio del mercado, saludables y hechos con productos naturales.</p>
             </div>
             <div>
-                Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
+                    <h3 class="titulo-contacto">Contacto</h3>
+                    <ul class="lista-contacto text-normal">
+                        <li>Direccion: Calle primera barrio el hospital, Arboledas</li>
+                        <li>Teléfono: +57 311 4545175</li>
+                    </ul>
             </div>
         </div>
+        <div class="pie-copyright text-normal">
+            Copyright 2025 SiempreBella. All rights reserved by Focus Marketing.
+        </div>
     </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/filtros.js"></script>
+    <script src="js/tienda.js"></script>
 </body>
 </html>

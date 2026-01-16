@@ -1,0 +1,21 @@
+details {
+    width: 90%;
+    padding: 6% 4%;
+    box-sizing: border-box;
+    margin: 6% auto;
+    -webkit-margin-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(39, 39, 39);
+}
+summary {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+details[open] summary, details:hover summary {
+    color: rgb(255, 86, 105);
+    font-weight: 800;
+}
+details p {
+    font-size: 1.2em;
+    margin: 4% 0 0 4%;
+}

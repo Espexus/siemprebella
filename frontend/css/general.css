@@ -1,0 +1,95 @@
+/* padres generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* secciones, divs y flexbox */
+section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6% 1%;
+    margin: 0;
+}
+.seccion-oscura {
+    background-color: rgb(232, 232, 232);
+}
+div {
+    padding: 6% 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+div[class="flex-vertical-centrado"] {
+    width: 80%;
+    box-sizing: border-box;
+}
+.flex-vertical-centrado {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.margen-izquierdo {
+    margin-left: 4%;
+}
+
+
+
+/* imagenes */
+.img-size-completo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* titulos, subtitulos y textos */
+.titulo-seccion {
+    font-size: 2.6em;
+    margin-top: 8%;
+    text-align: center;
+}
+.subtitulo-parrafo {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3.2%;
+}
+.subtitulo-destacado {
+    font-size: 2.1em;
+}
+.text-normal {
+    text-transform: none;
+}
+.descripcion {
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+}
+.texto-peque {
+    width: 100%;
+    color: rgb(255, 86, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: 1em;
+}
+.texto-destacado {
+    width: 100%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 2.8em;
+}
+.violeta {
+    color: rgb(255, 86, 105);
+}
+.white {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}

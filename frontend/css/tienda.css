@@ -1,0 +1,90 @@
+
+/* parte de los productos */
+.productos {
+    width: 100%;
+    padding: 2% 4%;
+    min-height: 50vh;
+}
+.mensaje {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* parte de los filtros*/
+.filtros {
+    margin-top: 6%;
+}
+/* encabezado */
+.encabezado-filtros {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 86, 105);
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 4%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+}
+.subtitulo-categoria {
+    text-transform: none;
+    color: white;
+}
+.btn {
+    width: 8%;
+    font-size: 0.8em;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* zona de los filtros como tal */
+.form-filtros {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    text-transform: none;
+}
+.form-part {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    margin: 8% 0;
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    font-size: 1.4em;
+    line-height: 1;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.cuadro {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 4%;
+    background-color: white;
+
+}
+input[type="radio"]:checked + .cuadro{
+    background-color: rgb(255, 86, 105);
+}
+input[type="radio"]:checked ~ label {
+  color: rgb(255, 195, 202);
+}
+
+/* oculto para el filtro */
+.oculto {
+    display: none;
+}
+/* recuerda hacer un hover de cambio de color a los hover */
