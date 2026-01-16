@@ -1,0 +1,67 @@
+div {
+    padding: 2% 4%;
+}
+.flex-vertical {
+    margin-bottom: 4%;
+}
+.parrafos-vertical {
+    margin: 3%;
+    -webkit-margin-collapse: collapse;
+}
+
+/* textos */
+.texto-destacado {
+    font-size: 2em;
+}
+.text-normal {
+    text-align: left;
+    font-size: 1.3em;
+}
+
+/* imagenes */
+.img-size-completo {
+    width: 90%;
+}
+
+/* lista de valores */
+ul {
+    list-style-type: "➜ ";
+    margin-left: 2%;
+}
+
+/* sección de imagenes de los valores */
+.seccion-valores {
+    background-image: url("../imgs/fondo-valores.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.seccion-icono {
+    width: 100%;
+    margin: 8% 0;
+    -webkit-margin-collapse: collapse;
+}
+.icono {
+    display: block;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+}
+.subtitulo-icono {
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    font-weight: 800;
+}
+.gris {
+    color: rgb(199, 199, 199);
+}
+.descripcion {
+    text-transform: none;
+}
+
+section {
+    width: 100%;
+    margin: 0;
+}
