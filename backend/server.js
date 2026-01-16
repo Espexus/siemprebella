@@ -23,11 +23,11 @@ app.post("/api/mensajes", (req, res) => {
 })
 
 app.get("/api/productos", (req,res) => {
-    db.query("SELECT nombre, precio, imagen FROM productos ORDER BY nombre ASC", (err, resultado) => {
+    db.query("SELECT id, nombre, precio, imagen FROM productos ORDER BY nombre ASC", (err, resultado) => {
         if(err) {
             return res.status(500).json({message: "error al realizar la consulta en la base de datos"})
         }
-        return res.json(resultado)
+        return res.json(resultado);
     })
 })
 

@@ -20,8 +20,9 @@
             let tarjeta = `
                 <div class="tarjeta" id="${registro.id}">
                     <div class="espacio-imagen-tarjeta">
-                        <img src="${registro.imagen}" title="${registro.nombre}">
+                        <img src="frontend/${registro.imagen}" title="${registro.nombre}">
                     </div>
+                    <p class="nombre-tarjeta">${registro.nombre}</p>
                     <h5 class="precio-tarjeta">${registro.precio}</h5>
                     <button class="boton-carrito">Agregar al carrito</button>
                     <p class="categoria-tarjeta">${registro.categoria}</p>
