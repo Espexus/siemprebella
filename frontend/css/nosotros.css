@@ -60,7 +60,10 @@ ul {
 .descripcion {
     text-transform: none;
 }
-
+.subtitulo-icono + .descripcion {
+    width: 80%;
+    margin: 0 auto;
+}
 section {
     width: 100%;
     margin: 0;

@@ -22,7 +22,7 @@
         </div>
 
         <ul class="lista-menu">
-            <li class="item-menu"><a href="index.html" class="enlace-menu">INICIO</a></li>
+            <li class="item-menu"><a href="../index.html" class="enlace-menu">INICIO</a></li>
             <li class="item-menu"><a href="tienda.html" class="enlace-menu">TIENDA</a></li>
             <li class="item-menu"><a href="nosotros.html" class="enlace-menu">NOSOTROS</a></li>
             <li class="item-menu"><a href="preg-frecuentes.html" class="enlace-menu">PREGUNTAS FRECUENTES</a></li>
@@ -41,40 +41,40 @@
             </div>
             <form class="form-filtros oculto" id="formulario-filtros">
                 <div class="form-part">
-                    <input type="radio" name="categoria" value="calendula" id="calendula">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="calendula" id="calendula">
                     <span class="cuadro"></span>
                     <label for="calendula">Linea de caléndula</label>
                 </div>
 
                 <div class="form-part">
-                    <input type="radio" name="categoria" value="reviving" id="reviving">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="reviving" id="reviving">
                     <span class="cuadro"></span>
                     <label for="reviving">Linea de reviving</label>
                 </div>
                 
 
                 <div class="form-part">
-                    <input type="radio" name="categoria" value="skincare" id="skincare">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="skincare" id="skincare">
                     <span class="cuadro"></span>
                     <label for="skincare">Linea de skincare</label>
                 </div>
                 
 
                 <div class="form-part">
-                    <input type="radio" name="categoria" value="maquillaje" id="maquillaje">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="maquillaje" id="maquillaje">
                     <span class="cuadro"></span>
                     <label for="maquillaje">Linea de maquillaje</label>
                 </div>
 
                 <div class="form-part">
-                    <input type="radio" name="categoria" value="nutricion" id="nutricion">
+                    <input type="radio" class="fitro-categoria" name="categoria" value="nutricion" id="nutricion">
                     <span class="cuadro"></span>
                     <label for="nutricion">Linea de nutricion</label>
                 </div>
             </form>
 
         </div>
-        <div class="productos">
+        <div class="productos" id="lista-productos">
             <h3 class="mensaje" id="mensaje">No hay productos que coincidan con los filtros seleccionados</h3>
         </div>
     </section>
@@ -100,5 +100,6 @@
 
     <script src="js/menu.js"></script>
     <script src="js/filtros.js"></script>
+    <script src="js/tienda.js"></script>
 </body>
 </html>

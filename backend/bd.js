@@ -18,4 +18,4 @@ conexion.connect((err) => {
     }
 })
 
-module.exports(conexion);
+module.exports = conexion;
