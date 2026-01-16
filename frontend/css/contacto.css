@@ -66,3 +66,15 @@ input, textarea {
     background-color: white;
     border: 1px solid black;
 }
+
+/* parte de mi mapa */
+.mapa-espacio {
+    width: 96%;
+    margin: 0 auto;
+    height: 40vh;
+}
+.mapa {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
