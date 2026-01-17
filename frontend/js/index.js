@@ -30,5 +30,25 @@
             `;
             contenedor.insertAdjacentHTML("beforeend", tarjeta);
         });
+        deslizar();
+    }
+
+    function deslizar() {
+        const slider = document.getElementById("track");
+        const contenido = document.getElementById("contenedor-mas-vendidos");
+        let velocidad = 1;
+
+        // duplicar tarjetas
+        contenido.innerHTML += contenido.innerHTML;
+
+        function autoScroll() {
+            slider.scrollLeft += velocidad;
+
+            if (slider.scrollLeft >= contenido.scrollWidth / 2) {
+            slider.scrollLeft = 0;
+            }
+        }
+
+        setInterval(autoScroll, 20);
     }
 })()
