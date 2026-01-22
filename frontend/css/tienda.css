@@ -88,3 +88,40 @@ input[type="radio"]:checked ~ label {
     display: none;
 }
 /* recuerda hacer un hover de cambio de color a los hover */
+
+/* estilos para la parte de las tarjetas de la tienda */
+.flex-horizontal-productos {
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.tarjeta {
+    flex: 0 0 30%;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: rgb(255, 86, 105);
+    color: white;
+    text-align: center;
+}
+.espacio-imagen-tarjeta {
+    width: 100%;
+}
+.espacio-imagen-tarjeta img {
+    width: 100%;
+}
+/* dentro de la tarjeta */
+.nombre-tarjeta {
+    font-size: 0.8em;
+    text-transform: none;
+}
+.precio-tarjeta {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.boton-carrito {
+    margin-top: 20%;
+    padding: 2% 0;
+    font-family: cursive;
+    font-size: 0.8em;
+}
