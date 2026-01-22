@@ -19,3 +19,16 @@ details p {
     font-size: 1.2em;
     margin: 4% 0 0 4%;
 }
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+    details {
+        padding: 2%;
+        margin: 2% auto;
+    }
+    details:hover {
+        cursor: pointer;
+    }
+}

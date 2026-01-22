@@ -20,8 +20,9 @@
             let tarjeta = `
                 <div class="tarjeta" id="${registro.id}">
                     <div class="espacio-imagen-tarjeta">
-                        <img src="${registro.imagen}" title="${registro.nombre}">
+                        <img src="frontend/${registro.imagen}" title="${registro.nombre}">
                     </div>
+                    <p class="nombre-tarjeta">${registro.nombre}</p>
                     <h5 class="precio-tarjeta">${registro.precio}</h5>
                     <button class="boton-carrito">Agregar al carrito</button>
                     <p class="categoria-tarjeta">${registro.categoria}</p>
@@ -29,5 +30,25 @@
             `;
             contenedor.insertAdjacentHTML("beforeend", tarjeta);
         });
+        deslizar();
+    }
+
+    function deslizar() {
+        const slider = document.getElementById("track");
+        const contenido = document.getElementById("contenedor-mas-vendidos");
+        let velocidad = 1;
+
+        // duplicar tarjetas
+        contenido.innerHTML += contenido.innerHTML;
+
+        function autoScroll() {
+            slider.scrollLeft += velocidad;
+
+            if (slider.scrollLeft >= contenido.scrollWidth / 2) {
+            slider.scrollLeft = 0;
+            }
+        }
+
+        setInterval(autoScroll, 20);
     }
 })()

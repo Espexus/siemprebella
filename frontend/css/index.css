@@ -106,3 +106,107 @@ h1 {
 .oculto3 {
     background-image: url("../imgs/img-red3.png");
 }
+
+/* la parte de la deslizable de los productos top y las tarjetas*/
+.deslizable {
+    width: 98%;
+    padding: 1% 2%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* height: 70vh; */
+}
+.tarjeta {
+    flex: 0 0 50%;
+    text-align: center;
+}
+.espacio-imagen-tarjeta {
+    width: 100%;
+}
+.espacio-imagen-tarjeta img {
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+}
+.nombre-tarjeta {
+    max-width: 90%;
+    margin: 0 auto;
+    text-transform: none;
+    color: black;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.precio-tarjeta {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.boton-carrito {
+    padding: 4%;
+    margin-top: 10%;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(255, 86, 105);
+    border: none;
+}
+.categoria-tarjeta {
+    width: 80%;
+    text-align: right;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    text-transform: none;
+    font-style: italic;
+    margin-top: 4%;
+}
+#track{
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+#track::-webkit-scrollbar {
+    display: none;
+}
+#contenedor-mas-vendidos {
+    display: inline-flex;
+}
+
+@media(min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+    div {
+        padding: 1%;
+    }
+    .seccion-titulo {
+        height: 100vh;
+    }
+    .tarjeta {
+        flex: 0 0 25%;
+        margin: 0 2%;
+        -webkit-margin-collapse: collapse;
+        padding: 0;
+    }
+    .boton-coloreado {
+        padding: 4%;
+    }
+    .enlace-redondo {
+        width: 160px;
+        height: 160px;
+        margin-top: 8%;
+    }
+    .img-reviving {
+        flex: 0 0 40%;
+    }
+    .boton-oculto-img {
+        height: 50vh;
+    }
+}

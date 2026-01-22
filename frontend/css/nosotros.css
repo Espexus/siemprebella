@@ -68,3 +68,19 @@ section {
     width: 100%;
     margin: 0;
 }
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+    .div-img-valores {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+    }
+    .img-size-completo {
+        width: 100%;
+    }
+    .subtitulo-icono {
+        margin-top: 8%;
+    } 
+}
