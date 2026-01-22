@@ -96,3 +96,12 @@ div[class="flex-vertical-centrado"] {
     color: white;
     text-shadow: 1px 1px 2px black;
 }
+
+@media(min-width: 1024px) {
+    .seccion-flex-horizontal {
+        display: flex;
+        justify-content: space-around;
+        gap: 1%;
+        box-sizing: border-box;
+    }
+}

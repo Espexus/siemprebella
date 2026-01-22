@@ -74,7 +74,6 @@ label {
     display: inline-block;
     margin-right: 4%;
     background-color: white;
-
 }
 input[type="radio"]:checked + .cuadro{
     background-color: rgb(255, 86, 105);
@@ -91,7 +90,7 @@ input[type="radio"]:checked ~ label {
 
 /* estilos para la parte de las tarjetas de la tienda */
 .flex-horizontal-productos {
-    width: 100vw;
+    width: 100%;
     display: flex;
     box-sizing: border-box;
     justify-content: space-around;
@@ -124,4 +123,33 @@ input[type="radio"]:checked ~ label {
     padding: 2% 0;
     font-family: cursive;
     font-size: 0.8em;
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+    section {
+        padding: 0;
+    }
+    .filtros {
+        flex: 0 0 25%;
+        font-size: 14px;
+        margin: 0;
+    }
+    #btnFiltros {
+        display: none;
+    }
+    .oculto {
+        display: block;
+    }
+    label {
+        text-transform: none;
+    }
+    .section-horizontal {
+        gap: 0;
+    }
+    .form-part {
+        margin: 12% 0;
+    }
 }

@@ -124,12 +124,7 @@ h1 {
 }
 .tarjeta {
     flex: 0 0 50%;
-    /* height: 80%; */
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-    /* background-color: rgb(255, 87, 87); */
 }
 .espacio-imagen-tarjeta {
     width: 100%;
@@ -182,4 +177,36 @@ h1 {
 }
 #contenedor-mas-vendidos {
     display: inline-flex;
+}
+
+@media(min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+    div {
+        padding: 1%;
+    }
+    .seccion-titulo {
+        height: 100vh;
+    }
+    .tarjeta {
+        flex: 0 0 25%;
+        margin: 0 2%;
+        -webkit-margin-collapse: collapse;
+        padding: 0;
+    }
+    .boton-coloreado {
+        padding: 4%;
+    }
+    .enlace-redondo {
+        width: 160px;
+        height: 160px;
+        margin-top: 8%;
+    }
+    .img-reviving {
+        flex: 0 0 40%;
+    }
+    .boton-oculto-img {
+        height: 50vh;
+    }
 }
